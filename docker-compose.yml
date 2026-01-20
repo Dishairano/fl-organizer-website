@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  website:
+    build: .
+    container_name: fl-organizer-website
+    ports:
+      - "5050:80"
+    restart: unless-stopped
+    labels:
+      - "description=FL Studio Organizer Marketing Website"
